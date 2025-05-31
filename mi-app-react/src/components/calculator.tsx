@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ExternalBorder, InternalBorder, Result, Buttons, Button, OffButton } from "../styles/calculator";
+import { ExternalBorder, InternalBorder, Result, Buttons, Button, OffButton } from "../styles/calculatorStyles";
 import { evaluate } from "mathjs";
 
 export const Calculator: React.FC = () => {

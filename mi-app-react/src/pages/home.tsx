@@ -1,19 +1,33 @@
-import { Link } from 'react-router-dom';
+import { Card } from '../components/card';
+import { Header, Exercises, StyledLink } from '../styles/homeStyles';
 
 export const Home: React.FC = () => {
-    return (
-        <div style={{ padding: '2rem' }}>
-            <h1>Ejercicios de React</h1>
-            <p>Haz clic en un ejercicio</p>
-
-            <ul style={{ listStyle: 'none', paddingLeft: 0 }}>
-                <li><Link to="/calculator">Calculadora (useState)</Link></li>
-                <li><Link to="/toggle">Mostrar/Ocultar texto (useState)</Link></li>
-                <li><Link to="/form">Formulario controlado (useState)</Link></li>
-                <li><Link to="/title-counter">Contador que actualiza el título (useEffect)</Link></li>
-                <li><Link to="/clock">Reloj en vivo (useEffect)</Link></li>
-                <li><Link to="/random-user">Consumir API RandomUser (useEffect)</Link></li>
-            </ul>
-        </div>
-    );
+    return <>
+        <Header>Ejercicios de React</Header>
+        <Exercises>
+            <StyledLink to="/calculator">
+                <Card title="Calculadora" root="/calculator" />
+            </StyledLink>
+            <StyledLink to="/calculator">
+                <Card title="Calculadora" root="/calculator" />
+            </StyledLink>
+            <StyledLink to="/calculator">
+                <Card title="Calculadora" root="/calculator" />
+            </StyledLink>
+            <StyledLink to="/calculator">
+                <Card title="Calculadora" root="/calculator" />
+            </StyledLink>
+            <StyledLink to="/calculator">
+                <Card title="Calculadora" root="/calculator" />
+            </StyledLink>
+            <StyledLink to="/calculator">
+                <Card title="Calculadora" root="/calculator" />
+            </StyledLink>
+            {/* <StyledLink to="/toggle">Mostrar/Ocultar texto</StyledLink>
+            <StyledLink to="/form">Formulario controlado</StyledLink>
+            <StyledLink to="/title-counter">Contador que actualiza el título</StyledLink>
+            <StyledLink to="/clock">Reloj en vivo</StyledLink>
+            <StyledLink to="/random-user">Consumir API RandomUser</StyledLink> */}
+        </Exercises>
+    </>;
 };

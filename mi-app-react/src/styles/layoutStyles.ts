@@ -33,10 +33,13 @@ export const Footer = styled.header`
     background-color:rgb(184, 184, 184);
     font-size: 2rem;
     width: 100%;
-    position: absolute;
-    bottom: 0;
     font-family: "Poppins", sans-serif;
     font-size: 1.25rem;
     text-align: center;
     padding: .6em 0;
+`;
+
+export const WhiteBackGround = styled.div`
+    background-color: white;
+    padding: 4em 0;
 `;

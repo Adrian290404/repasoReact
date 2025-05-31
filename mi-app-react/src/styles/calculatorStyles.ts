@@ -20,7 +20,7 @@ interface ButtonProps {
 export const ExternalBorder = styled.div`
     position: relative;
     max-width: 22em;
-    margin: 4em auto;
+    margin: 0 auto;
     padding: 1.5em;
     border-radius: 1.5em;
     background-color: #1e1e1e;

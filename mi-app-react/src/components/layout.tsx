@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from "react-router-dom"
-import { Header, GoBack, Title, Footer, Description } from "../styles/layoutStyles"
+import { Header, GoBack, Title, Footer, Description, WhiteBackGround } from "../styles/layoutStyles"
 import { IoHome } from "react-icons/io5";
 
 export const Layout: React.FC = () => {
@@ -25,7 +25,9 @@ export const Layout: React.FC = () => {
             <Title>{info?.title || "Ejercicio"}</Title>
             <Description>{info?.description || "Descripcion del ejercicio"}</Description>
         </Header>
-        <Outlet />
+        <WhiteBackGround>
+            <Outlet />
+        </WhiteBackGround>
         <Footer>
             <p>Adrián Martín García</p>
         </Footer>
