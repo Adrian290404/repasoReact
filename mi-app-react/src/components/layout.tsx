@@ -8,6 +8,10 @@ export const Layout: React.FC = () => {
         "/calculator": {
             title: "Calculadora",
             description: "Crea una calculadora totalmente funcional."
+        },
+        "/clock": {
+            title: "Reloj",
+            description: "Crea una reloj con la hora actual, que tenga también, funcion de cronometro."
         }
     }
 

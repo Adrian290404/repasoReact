@@ -8,25 +8,13 @@ export const Home: React.FC = () => {
             <StyledLink to="/calculator">
                 <Card title="Calculadora" root="/calculator" />
             </StyledLink>
-            <StyledLink to="/calculator">
-                <Card title="Calculadora" root="/calculator" />
-            </StyledLink>
-            <StyledLink to="/calculator">
-                <Card title="Calculadora" root="/calculator" />
-            </StyledLink>
-            <StyledLink to="/calculator">
-                <Card title="Calculadora" root="/calculator" />
-            </StyledLink>
-            <StyledLink to="/calculator">
-                <Card title="Calculadora" root="/calculator" />
-            </StyledLink>
-            <StyledLink to="/calculator">
-                <Card title="Calculadora" root="/calculator" />
+            <StyledLink to="/clock">
+                <Card title="Reloj" root="/clock" />
             </StyledLink>
             {/* <StyledLink to="/toggle">Mostrar/Ocultar texto</StyledLink>
             <StyledLink to="/form">Formulario controlado</StyledLink>
             <StyledLink to="/title-counter">Contador que actualiza el título</StyledLink>
-            <StyledLink to="/clock">Reloj en vivo</StyledLink>
+            
             <StyledLink to="/random-user">Consumir API RandomUser</StyledLink> */}
         </Exercises>
     </>;
