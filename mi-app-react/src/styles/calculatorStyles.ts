@@ -31,7 +31,7 @@ export const ExternalBorder = styled.div`
 export const OffButton = styled.div`
     position: absolute;
     top: 3.5em;
-    right: -1em;
+    right: -.6em;
     background-color: #ff4d4d;
     padding: 1.5em .5em;
     border-radius: 0 .5em .5em 0;
@@ -39,7 +39,6 @@ export const OffButton = styled.div`
     font-weight: bold;
     cursor: pointer;
     z-index: 10;
-
     transition: background-color 0.3s;
     &:hover {
         background-color: #e63946;

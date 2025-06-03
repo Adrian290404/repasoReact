@@ -4,6 +4,7 @@ import { MdOutlineAccessTimeFilled } from "react-icons/md";
 import { MdTimer } from "react-icons/md";
 import { MdNotStarted } from "react-icons/md";
 import { MdOutlinePauseCircleFilled } from "react-icons/md";
+import { MdOutlineRestartAlt } from "react-icons/md";
 
 interface clockState{
     state: boolean;
@@ -31,6 +32,10 @@ export const StartIcon = styled(MdNotStarted)<clockState>`
 `;
 
 export const PauseIcon = styled(MdOutlinePauseCircleFilled)<clockState>`
+    color: #00ffcc;
+`;
+
+export const RestartIcon = styled(MdOutlineRestartAlt)<clockState>`
     color: #00ffcc;
 `;
 
@@ -98,7 +103,7 @@ export const Switch = styled.button`
     border-radius: 1em;
     background-color: black;
     top: .2em;
-    right: 6em;
+    left: 6em;
     cursor: pointer;
 `;
 
