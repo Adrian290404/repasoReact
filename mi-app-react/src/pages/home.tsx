@@ -11,6 +11,9 @@ export const Home: React.FC = () => {
             <StyledLink to="/clock">
                 <Card title="Reloj" root="/clock" />
             </StyledLink>
+            <StyledLink to="/weather">
+                <Card title="Tiempo" root="/weather" />
+            </StyledLink>
             {/* <StyledLink to="/toggle">Mostrar/Ocultar texto</StyledLink>
             <StyledLink to="/form">Formulario controlado</StyledLink>
             <StyledLink to="/title-counter">Contador que actualiza el título</StyledLink>

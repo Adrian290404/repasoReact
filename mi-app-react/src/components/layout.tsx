@@ -12,6 +12,10 @@ export const Layout: React.FC = () => {
         "/clock": {
             title: "Reloj",
             description: "Crea una reloj con la hora actual, que tenga también, funcion de cronometro."
+        },
+        "/weather": {
+            title: "Tiempo",
+            description: "Crea una aplicacion usando una API para mostrar el clima en diferentes ciudades."
         }
     }
 

@@ -11,7 +11,7 @@ export const Clock: React.FC = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-        setTime(new Date());
+            setTime(new Date());
         }, 1);
 
         return () => clearInterval(interval);
@@ -19,11 +19,12 @@ export const Clock: React.FC = () => {
 
     useEffect(() => {
         if (running) {
-        intervalRef.current = setInterval(() => {
-            setTimer((prev) => prev + 10);
-        }, 10);
-        } else {
-        clearInterval(intervalRef.current);
+            intervalRef.current = setInterval(() => {
+                setTimer((prev) => prev + 10);
+            }, 10);
+        } 
+        else {
+            clearInterval(intervalRef.current);
         }
 
         return () => clearInterval(intervalRef.current);

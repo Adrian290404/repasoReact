@@ -5,6 +5,7 @@ import { Calculator } from './components/calculator';
 // import NameForm from './components/NameForm';
 // import TitleCounter from './components/TitleCounter';
 import { Clock } from './components/clock';
+import { Weather } from './components/weather';
 // import RandomUser from './components/RandomUser';
 import { Layout } from './components/layout';
 import { GlobalStyle } from './styles/globalStyles';
@@ -20,6 +21,7 @@ export const App: React.FC = () => {
             <Route element={<Layout />}>
                 <Route path="/calculator" element={<Calculator />} />
                 <Route path="/clock" element={<Clock />} />
+                <Route path="/weather" element={<Weather />} />
                 {/* <Route path="/toggle" element={<ToggleText />} />
                 <Route path="/form" element={<NameForm />} />
                 <Route path="/title-counter" element={<TitleCounter />} />
